@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 20/05/2016 16:28:08 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="modelo.Licencias" table="licencias" catalog="transito" optimistic-lock="version">
+        <id name="idlicencias" type="java.lang.Integer">
+            <column name="idlicencias" />
+            <generator class="identity" />
+        </id>
+        <property name="nlicencias" type="int">
+            <column name="nlicencias" not-null="true" />
+        </property>
+        <property name="apellidolic" type="string">
+            <column name="apellidolic" length="100" not-null="true" />
+        </property>
+        <property name="nombrelic" type="string">
+            <column name="nombrelic" length="100" not-null="true" />
+        </property>
+        <property name="fechanacimientolic" type="date">
+            <column name="fechanacimientolic" length="10" not-null="true" />
+        </property>
+        <property name="domiciliolic" type="string">
+            <column name="domiciliolic" length="150" not-null="true" />
+        </property>
+        <property name="nacionalidadlic" type="string">
+            <column name="nacionalidadlic" length="15" not-null="true" />
+        </property>
+        <property name="fechaemicionlic" type="date">
+            <column name="fechaemicionlic" length="10" not-null="true" />
+        </property>
+        <property name="fechavencelic" type="date">
+            <column name="fechavencelic" length="10" not-null="true" />
+        </property>
+        <property name="idclase" type="int">
+            <column name="idclase" not-null="true" />
+        </property>
+        <property name="puntoslic" type="int">
+            <column name="puntoslic" not-null="true" />
+        </property>
+        <property name="gruposangrelic" type="string">
+            <column name="gruposangrelic" length="10" not-null="true" />
+        </property>
+        <property name="estadolic" type="string">
+            <column name="estadolic" length="100" not-null="true" />
+        </property>
+        <property name="estadoadmlic" type="string">
+            <column name="estadoadmlic" length="100" not-null="true" />
+        </property>
+        <property name="fechaaltalic" type="date">
+            <column name="fechaaltalic" length="10" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -7,5 +7,19 @@
     <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/transito?zeroDateTimeBehavior=convertToNull</property>
     <property name="hibernate.connection.username">root</property>
     <property name="hibernate.connection.password">root</property>
+    <property name="hibernate.current_session_context_class">thread</property>
+    <property name="hibernate.show_sql">true</property>
+    <mapping resource="modelo/ActaInfraccion.hbm.xml"/>
+    <mapping resource="modelo/Infraccion.hbm.xml"/>
+    <mapping resource="modelo/Menu.hbm.xml"/>
+    <mapping resource="modelo/RolMenu.hbm.xml"/>
+    <mapping resource="modelo/Licencias.hbm.xml"/>
+    <mapping resource="modelo/Clase.hbm.xml"/>
+    <mapping resource="modelo/Motovehiculo.hbm.xml"/>
+    <mapping resource="modelo/Acta.hbm.xml"/>
+    <mapping resource="modelo/Personal.hbm.xml"/>
+    <mapping resource="modelo/Usuarios.hbm.xml"/>
+    <mapping resource="modelo/Grua.hbm.xml"/>
+    <mapping resource="modelo/Roles.hbm.xml"/>
   </session-factory>
 </hibernate-configuration>

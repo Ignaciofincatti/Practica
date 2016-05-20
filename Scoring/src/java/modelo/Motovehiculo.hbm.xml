@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 20/05/2016 16:28:08 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="modelo.Motovehiculo" table="motovehiculo" catalog="transito" optimistic-lock="version">
+        <id name="idmotovehiculo" type="java.lang.Integer">
+            <column name="idmotovehiculo" />
+            <generator class="identity" />
+        </id>
+        <property name="patentem" type="string">
+            <column name="patentem" length="100" not-null="true" />
+        </property>
+        <property name="numerochasism" type="string">
+            <column name="numerochasism" length="100" not-null="true" />
+        </property>
+        <property name="numeromotorm" type="string">
+            <column name="numeromotorm" length="100" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

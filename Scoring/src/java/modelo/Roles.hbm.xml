@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 20/05/2016 16:28:08 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="modelo.Roles" table="roles" catalog="transito" optimistic-lock="version">
+        <id name="idrol" type="java.lang.Integer">
+            <column name="idrol" />
+            <generator class="identity" />
+        </id>
+        <property name="nombrerol" type="string">
+            <column name="nombrerol" length="100" not-null="true" />
+        </property>
+        <property name="descripcionRol" type="string">
+            <column name="descripcionRol" length="150" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

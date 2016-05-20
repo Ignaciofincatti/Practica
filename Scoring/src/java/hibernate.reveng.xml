@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-reverse-engineering PUBLIC "-//Hibernate/Hibernate Reverse Engineering DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-reverse-engineering-3.0.dtd">
+<hibernate-reverse-engineering>
+  <schema-selection match-catalog="transito"/>
+  <table-filter match-name="usuarios"/>
+  <table-filter match-name="licencias"/>
+  <table-filter match-name="roles"/>
+  <table-filter match-name="clase"/>
+  <table-filter match-name="acta"/>
+  <table-filter match-name="infraccion"/>
+  <table-filter match-name="grua"/>
+  <table-filter match-name="motovehiculo"/>
+  <table-filter match-name="acta_infraccion"/>
+  <table-filter match-name="personal"/>
+  <table-filter match-name="menu"/>
+  <table-filter match-name="rol_menu"/>
+</hibernate-reverse-engineering>

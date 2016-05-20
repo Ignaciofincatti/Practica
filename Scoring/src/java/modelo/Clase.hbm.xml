@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 20/05/2016 16:28:08 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="modelo.Clase" table="clase" catalog="transito" optimistic-lock="version">
+        <id name="idclase" type="java.lang.Integer">
+            <column name="idclase" />
+            <generator class="identity" />
+        </id>
+        <property name="tipoclase" type="string">
+            <column name="tipoclase" length="10" not-null="true" />
+        </property>
+        <property name="descripcionclase" type="string">
+            <column name="descripcionclase" length="150" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

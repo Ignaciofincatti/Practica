@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 20/05/2016 16:28:08 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="modelo.Personal" table="personal" catalog="transito" optimistic-lock="version">
+        <id name="idpersonal" type="java.lang.Integer">
+            <column name="idpersonal" />
+            <generator class="identity" />
+        </id>
+        <property name="dnipersonal" type="int">
+            <column name="dnipersonal" not-null="true" />
+        </property>
+        <property name="apellidop" type="string">
+            <column name="apellidop" length="100" not-null="true" />
+        </property>
+        <property name="nombrep" type="string">
+            <column name="nombrep" length="100" not-null="true" />
+        </property>
+        <property name="fechanacimientop" type="date">
+            <column name="fechanacimientop" length="10" not-null="true" />
+        </property>
+        <property name="domiciliop" type="string">
+            <column name="domiciliop" length="150" not-null="true" />
+        </property>
+        <property name="nacionalidadp" type="string">
+            <column name="nacionalidadp" length="30" not-null="true" />
+        </property>
+        <property name="fechaaltap" type="date">
+            <column name="fechaaltap" length="10" not-null="true" />
+        </property>
+        <property name="sexop" type="string">
+            <column name="sexop" length="2" not-null="true" />
+        </property>
+        <property name="gruposangrep" type="string">
+            <column name="gruposangrep" length="10" not-null="true" />
+        </property>
+        <property name="estadop" type="string">
+            <column name="estadop" length="10" not-null="true" />
+        </property>
+        <property name="idgruap" type="int">
+            <column name="idgruap" not-null="true" />
+        </property>
+        <property name="idmotovehiculop" type="int">
+            <column name="idmotovehiculop" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

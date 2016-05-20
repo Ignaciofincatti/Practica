@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 20/05/2016 16:28:08 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="modelo.Acta" table="acta" catalog="transito" optimistic-lock="version">
+        <id name="idacta" type="java.lang.Integer">
+            <column name="idacta" />
+            <generator class="identity" />
+        </id>
+        <property name="idlicencia" type="int">
+            <column name="idlicencia" not-null="true" />
+        </property>
+        <property name="fechaacta" type="date">
+            <column name="fechaacta" length="10" not-null="true" />
+        </property>
+        <property name="lugarinfraccion" type="string">
+            <column name="lugarinfraccion" length="150" not-null="true" />
+        </property>
+        <property name="idpersonal" type="int">
+            <column name="idpersonal" not-null="true" />
+        </property>
+        <property name="observacionesacta" type="string">
+            <column name="observacionesacta" length="65535" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>
